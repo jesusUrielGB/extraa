@@ -1,0 +1,36 @@
+$def with (form,registros)
+<html>
+<head>   
+    
+  
+    <title>Extra</title>
+</head>
+    <body>
+
+<h1>Rentar una pelicula</h1>
+<h1></h1>
+<h1></h1>
+<h1></h1>
+
+<form name="main" method="post"> 
+$if not form.valid: <p class="error">Try again:</p>
+$:form.render()
+
+<input type="submit" class="boton"  value="Guardar"/>    </form>
+
+
+<table border="1" align="center">
+    <th> Cliente</th>
+    <th> Pelicula</th>
+    <th> Formato</th>
+    <th> Tiempo</th>
+    <th> Total</th>
+     $for row in registros:
+      <tr>
+          <td>$row.cliente</td> <td>$row.pelicula</td> <td>$row.formato</td> <td>$row.tiempo </td> <td>$row.total </td>
+      </tr>
+</table>
+
+
+</body>
+</html>

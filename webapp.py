@@ -8,7 +8,7 @@ render=web.template.render('templates')
 urls = (
     '/(.*)', 'index'
 )
-db = web.database(dbn='mysql', db='renta', user='root', pw='utec')
+db = web.database(dbn='mysql', db='frrxzga3znzs04h5', user='vd5qggehmcq2cg2w', pw='aivtsmmu4s2eoxo9', host="o61qijqeuqnj9chh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com")
 Clientes = Clientes()  
 Clientes.read()
 peliculas=Peliculas()
